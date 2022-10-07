@@ -29,8 +29,8 @@ public class StudentDatabaseJPA {
        List<Student> studentList = StudentTable.findAllStudent();
        printAllStudent(studentList);
     }
-    public static void printAllStudent(List<Student> employeeList) {
-        for(Student std : employeeList) {
+    public static void printAllStudent(List<Student> studentList) {
+        for(Student std : studentList) {
            System.out.print(std.getId() + " ");
            System.out.print(std.getName() + " ");
            System.out.println(std.getGPA() + " ");
